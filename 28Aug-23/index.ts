@@ -1,0 +1,1 @@
+console.log(`Practice Starts from Today`)
