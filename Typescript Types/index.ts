@@ -16,25 +16,50 @@ let nullVar: null = null;
 let undefinedVar: undefined = undefined;
 
 // => Void (we can store undefined value in void)
-let isVoid :void = undefined
+let isVoid: void = undefined;
 
 // => any
-let anyVar :any = "anything"
-anyVar= 45
-anyVar= false
+let anyVar: any = "anything";
+anyVar = 45;
+anyVar = false;
 
 // => Unknown
-let unknownVar :unknown = 'string' 
-unknownVar = 47
-unknownVar = true
+let unknownVar: unknown = "string";
+unknownVar = 47;
+unknownVar = true;
 
 // => Never
 function error(message?: string): never {
-    throw new Error("Error");
-    }
+  throw new Error("Error");
+}
 
 // => object
-const obj:{name:string,phone:number}={
-    name:"Ultimo",
-    phone:839
+const obj: { name: string; phone: number } = {
+  name: "Ultimo",
+  phone: 839,
+};
+
+// => Tuple
+var Arr3: [string, number, boolean] = ["Ultimo", 63, true];
+
+
+
+// Union
+
+let object :{
+    name: string,
+    message :string | number
+} = {
+name :"Ultimo",
+message:69 
 }
+
+
+
+// Enum
+enum colours {"red","green","blue"}
+enum weekDays {"monday","tuesday",}
+
+console.log(colours);
+
+
