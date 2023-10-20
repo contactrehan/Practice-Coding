@@ -22,19 +22,27 @@
 
 
 
-type car ={
-  brand :string,
-  colour :string,
-  isUsed: boolean
+type car = {
+  make:string,
+  year:number,
+  color:string
+ 
+  
+ }
+
+class Car {
+ make:string=""
+ year:number=0
+ color:string=""
+ constructor(make:string,year:number,color:string){
+  this.make = make
+  this.year = year
+  this.color= color
+ }
+ startcar(){
+  console.log("Start Car");
+  
+ }
 }
-class carClass {
-  brand :string
-  colour :string
-  isUsed :boolean
-  constructor (brand:string ,colour:string,isUsed:boolean){
-    this.brand = brand
-    this.colour = colour
-    this.isUsed = isUsed
-  }
-} 
-let car1 :car = new carClass("honda","red",false)
+let car1:car = new Car("Honda",2022,"Red")
+console.log(car1)
