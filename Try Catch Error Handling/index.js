@@ -9,3 +9,4 @@ catch (error) {
     console.log("Error", error);
 }
 console.log("End");
+console.log("the end");
