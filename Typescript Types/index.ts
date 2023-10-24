@@ -17,6 +17,14 @@ let undefinedVar: undefined = undefined;
 
 // => Void (we can store undefined value in void)
 let isVoid: void = undefined;
+ function printSomething():void{
+  // console.log(`print`);
+ 
+
+  
+}
+const result = printSomething()
+// console.log(result, typeof(result));
 
 // => any
 let anyVar: any = "anything";
@@ -60,6 +68,6 @@ message:69
 enum colours {"red","green","blue"}
 enum weekDays {"monday","tuesday",}
 
-console.log(colours);
+// console.log(colours);
 
 
